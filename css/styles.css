@@ -61,7 +61,7 @@ img {
 }
 
 .site-header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/header-bg.svg');
     min-height: 156px;
     background-repeat: no-repeat;
     background-size: 100%;
