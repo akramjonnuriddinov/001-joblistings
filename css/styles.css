@@ -118,7 +118,7 @@ img {
 
 .job-link-img {
     display: block;
-    width: 88px;
+    min-width: 88px;
     height: 88px;
     cursor: pointer;
     border-radius: 50%;
