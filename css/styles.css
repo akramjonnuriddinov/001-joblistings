@@ -15,7 +15,11 @@ html {
 
 *, *::after, *::before {
     box-sizing: inherit;
-    /* white-space: nowrap; */
+}
+
+*:focus {
+    outline: 3px dashed var(--skills-color);
+    outline-offset: 3px;
 }
 
 body {
@@ -53,14 +57,13 @@ img {
 
 /* MAIN-CONTENT */
 .main-content {
-    /* flex-grow: 1; */
+    flex-grow: 1;
 }
 
 .site-header {
     background-image: url('../img/header-bg.jpg');
-    height: 156px;
+    min-height: 156px;
     background-repeat: no-repeat;
-    background-position: cover;
     background-size: 100%;
     width: 100%;
 }
@@ -91,8 +94,7 @@ img {
     justify-content: space-between;
 }
 
-.job-item:nth-child(1),
-.job-item:nth-child(2) {
+.featured-true {
     border-left: 5px solid #5CA5A5;
 
 } 
@@ -122,19 +124,28 @@ img {
     border-radius: 50%;
 }
 
-.job-info-wrapper {
-    /* margin-right: 252px; */
-}
-
 .job-info-top {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
 }
 
+.company-name-link {
+    margin-right: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.company-name-link:hover {
+    opacity: 0.8;
+}
+
+.company-name-link:active {
+    opacity: 0.6;
+}
+
 .company-name {
     margin: 0;
-    margin-right: 16px;
     font-size: 14px;
     color: #5CA5A5;
     font-weight: 700;
@@ -168,9 +179,22 @@ img {
     border-radius: 12px;
 }
 
+.job-info-title-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.job-info-title-link:hover {
+    opacity: 0.8;
+}
+
+.job-info-titl-link:active {
+    opacity: 0.8;
+}
+
 .job-info-title {
     margin: 0;
-    margin-bottom: 8px;
     color: #2B3939;
     font-weight: 700;
     font-size: 18px;
@@ -203,8 +227,6 @@ img {
 .skills-list {
     display: flex;
     list-style: none;
-    /* justify-content: flex-end; */
-    /* flex-direction: row-reverse; */
 }
 
 .skill-item {
