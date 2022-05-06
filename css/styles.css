@@ -200,6 +200,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
 .job-additional-list {
@@ -214,6 +215,7 @@ img {
     color: #7C8F8F;
     line-height: 24px;
     letter-spacing: -0.12px;
+    white-space: nowrap;
 }
 
 .additional-item:not(:last-child) {
